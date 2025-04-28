@@ -20,10 +20,10 @@ function removeFile(FilePath) {
 
 router.get("/", async (req, res) => {
   let num = req.query.number;
-  async function RobinPair() {
+  async function lakshanPair() {
     const { state, saveCreds } = await useMultiFileAuthState(`./session`);
     try {
-      let RobinPairWeb = makeWASocket({
+      let lakshanmalith50 PairWeb = makeWASocket({
         auth: {
           creds: state.creds,
           keys: makeCacheableSignalKeyStore(
@@ -45,8 +45,8 @@ router.get("/", async (req, res) => {
         }
       }
 
-      RobinPairWeb.ev.on("creds.update", saveCreds);
-      RobinPairWeb.ev.on("connection.update", async (s) => {
+      lakshanPairWeb.ev.on("creds.update", saveCreds);
+      lakshanPairWeb.ev.on("connection.update", async (s) => {
         const { connection, lastDisconnect } = s;
         if (connection === "open") {
           try {
@@ -81,20 +81,20 @@ router.get("/", async (req, res) => {
               ""
             );
 
-            const sid = `*lakshan  [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*wa.me/message/WKGLBR2PCETWD1*\n\n*You can join my whatsapp group*\n\n*https://chat.whatsapp.com/GAOhr0qNK7KEvJwbenGivZ*`;
+            const sid = `*lakshan  [The powerful WA BOT]*\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*🎇🎃*\n\n*owner number *\n\n0763441376`;
             const mg = `🛑 *Do not share this code to anyone* 🛑`;
             const dt = await lakshanPairWeb.sendMessage(user_jid, {
               image: {
-                url: "https://raw.githubusercontent.com/lakshanmm/Maliya-md/refs/heads/main/image.jpg?token=GHSAT0AAAAAADC4EI4YKIBJW57P5XZTFCRG2AODNOA",
+                url: "https://i.ibb.co/6cR5VgV9/SulaMd.jpg",
               },
               caption: sid,
             });
-            const msg = await RobinPairWeb.sendMessage(user_jid, {
+            const msg = await lakshanPairWeb.sendMessage(user_jid, {
               text: string_session,
             });
             const msg1 = await RobinPairWeb.sendMessage(user_jid, { text: mg });
           } catch (e) {
-            exec("pm2 restart prabath");
+            exec("pm2 restart lakshan ");
           }
 
           await delay(100);
